@@ -1,0 +1,28 @@
+{
+    "name": "modbus",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon bin/www",
+        "start": "pm2 start app.js --name=MODBUS"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "cross-env": "^7.0.3",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "modbus-serial": "^8.0.3",
+        "mysql2": "^2.2.5",
+        "node-schedule": "^2.0.0",
+        "pm2": "^5.1.2",
+        "winston": "^3.3.3",
+        "winston-daily-rotate-file": "^4.5.5"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.12"
+    }
+}
